@@ -78,7 +78,7 @@ app.delete("/repositories/:id", verifyIfIdExist(repositories), (request, respons
 
   repositories.splice(index, 1);
 
-  return res.status(204).send();
+  return response.status(204).send();
 });
 
 app.post("/repositories/:id/like", verifyIfIdExist(repositories), (request, response) => {
